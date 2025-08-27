@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Murat Dekorasyon | İç Mimari & Usta İşçilik</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand: #0ea5e9; --accent: #f97316; }
+    body { font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .gradient-bg { background: linear-gradient(135deg, #0ea5e9, #f97316); }
+    .card-hover:hover { transform: translateY(-6px); transition: .3s ease; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+  <!-- Üst Bar -->
+  <header class="sticky top-0 z-40 shadow">
+    <div class="bg-white/90 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl gradient-bg text-white grid place-items-center font-extrabold text-lg">M</div>
+          <div>
+            <div class="text-xl font-extrabold tracking-tight">Murat Dekorasyon</div>
+            <div class="text-xs text-gray-600 -mt-1">35 Yıllık Tecrübe • Anahtar Teslim</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#hizmetler" class="hover:text-[var(--brand)]">Hizmetler</a>
+          <a href="#projeler" class="hover:text-[var(--brand)]">Projeler</a>
+          <a href="#hakkimizda" class="hover:text-[var(--brand)]">Hakkımızda</a>
+          <a href="#iletisim" class="hover:text-[var(--brand)]">İletişim</a>
+        </nav>
+        <a href="tel:5438391728" class="hidden sm:inline-block gradient-bg hover:opacity-90 text-white px-4 py-2 rounded-xl shadow">Hemen Ara</a>
+      </div>
+    </div>
+  </header>
+  <!-- Hero ve diğer içerikler aynen devam edecek -->
+  <footer class="gradient-bg text-white py-6 text-center">
+    © <span id="yil"></span> Murat Dekorasyon - Tüm Hakları Saklıdır.
+  </footer>
+  <a href="tel:5438391728" class="fixed right-4 bottom-4 gradient-bg text-white px-6 py-3 rounded-full shadow-lg">📞 Ara: 543 839 17 28</a>
+  <script>document.getElementById('yil').textContent = new Date().getFullYear();</script>
+</body>
+</html>
